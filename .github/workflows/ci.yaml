@@ -118,10 +118,6 @@ jobs:
             -H "Content-Type: application/json" \
             -d '{"applicationId": "${{ secrets.DOKPLOY_APP_ID }}"}'
 
-
-        
-
-
   docker-smoke-test:
     needs: build-and-test
     runs-on: ubuntu-latest
