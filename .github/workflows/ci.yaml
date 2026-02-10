@@ -76,7 +76,7 @@ jobs:
   push-to-dockerhub:
     needs: docker-smoke-test
     runs-on: ubuntu-latest
-    enviroment: DOCKER
+    environment: DOCKER
 
     steps:
       - name: Checkout repository
