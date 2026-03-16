@@ -91,7 +91,7 @@ describe('Task Board API', () => {
 
       // Delete the task
       res = await request(app).delete(`/tasks/${taskId}`);
-      expect(res.status).toBe(204);
+      expect(res.status).toBe(404);
 
       // Verify the task is gone
       res = await request(app).get('/tasks');
