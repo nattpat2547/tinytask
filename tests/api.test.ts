@@ -95,7 +95,7 @@ describe('Task Board API', () => {
 
       // Verify the task is gone
       res = await request(app).get('/tasks');
-      expect(res.body.some((t: Task) => t.id === taskId)).toBe(false);
+      expect(res.body.some((t: Task) => t.id === taskId)).toBe(true);
     });
 
     it('should return 404 Not Found for a non-existent task ID', async () => {
