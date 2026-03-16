@@ -105,7 +105,7 @@ jobs:
           context: .
           push: true
           tags: |
-            anunpanya/tinytask:latest
-            anunpanya/tinytask:${{ github.sha }}
+            nattpat2547/tinytask:latest
+            nattpat2547/tinytask:${{ github.sha }}
 
 
